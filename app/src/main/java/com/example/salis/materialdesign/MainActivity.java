@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.salis.materialdesign.activities.FragmentDrawer;
+import com.example.salis.materialdesign.activities.LibraryActivity;
 import com.example.salis.materialdesign.activities.NavigationViewActivity;
 
 public class MainActivity extends AppCompatActivity implements FragmentDrawerListener{
@@ -49,10 +50,16 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawerLis
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            Intent intent = new Intent(MainActivity.this, NavigationViewActivity.class);
-            startActivity(intent);
-            return true;
+        switch (id) {
+            case R.id.action_settings:
+                Intent intent = new Intent(MainActivity.this, NavigationViewActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.action_activity_library:
+                intent = new Intent(MainActivity.this, LibraryActivity.class);
+                startActivity(intent);
+                return true;
+
         }
 
         return super.onOptionsItemSelected(item);

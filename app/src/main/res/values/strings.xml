@@ -23,5 +23,7 @@
     <string name="title_help">Help</string>
     <string name="title_setting">Setting</string>
     <string name="title_activity_maps">Map</string>
+    <string name="library">library</string>
+    <string name="action_activity">Activity</string>
 
 </resources>

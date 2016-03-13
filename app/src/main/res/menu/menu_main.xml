@@ -20,4 +20,22 @@
         android:orderInCategory="200"
         android:title="@string/drawer_open"
         app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_activity"
+        android:orderInCategory="300"
+        android:title="@string/action_activity"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_activity_library"
+                android:title="@string/library"
+                app:showAsAction="never"
+                android:orderInCategory="100"/>
+        </menu>
+
+
+
+    </item>
 </menu>
